@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RN Tour and Travells</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #008080; color: white; padding: 20px 10px; text-align: center; }
+    nav { background: #004d4d; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 20px; }
+    h2 { color: #004d4d; }
+    .vehicle { background: white; padding: 15px; margin-bottom: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .booking-form { background: white; padding: 20px; border-radius: 8px; max-width: 500px; margin: auto; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .booking-form input, .booking-form textarea { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; }
+    .btn { background-color: #008080; color: white; padding: 10px; border: none; border-radius: 4px; cursor: pointer; width: 100%; }
+    .btn:hover { background-color: #006666; }
+    footer { background: #004d4d; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    .contact a { color: #008080; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RN Tour and Travells</h1>
+    <p>Book your ride easily and quickly!</p>
+  </header>
+
+  <nav>
+    <a href="#vehicles">Vehicles</a>
+    <a href="#booking">Booking</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="vehicles">
+    <h2>Available Vehicles</h2>
+    <div class="vehicle">
+      <h3>Swift Dzire (Sedan)</h3>
+      <p>Rate: ₹12/km | AC: Yes</p>
+    </div>
+    <div class="vehicle">
+      <h3>Innova Crysta (SUV)</h3>
+      <p>Rate: ₹18/km | AC: Yes</p>
+    </div>
+    <div class="vehicle">
+      <h3>Tempo Traveller (12-Seater)</h3>
+      <p>Rate: ₹20/km | AC: Yes</p>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h2>Book Your Ride</h2>
+    <form class="booking-form" action="https://formsubmit.co/youremail@example.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Mobile Number" required>
+      <input type="text" name="pickup" placeholder="Pickup Location" required>
+      <input type="text" name="drop" placeholder="Drop Location" required>
+      <input type="date" name="date" required>
+      <textarea name="message" placeholder="Any Message (Optional)"></textarea>
+      <button class="btn" type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: <strong>+91-XXXXXXXXXX</strong></p>
+    <p>📍 Location: Your City, India</p>
+    <p>📱 <a href="https://wa.me/91XXXXXXXXXX" target="_blank">Chat on WhatsApp</a></p>
+    <p>✉️ Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RN Tour and Travells. All rights reserved.</p>
+  </footer>
+</body>
+</html>
